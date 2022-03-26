@@ -1,0 +1,135 @@
+
+<div class="card p-fluid">
+    <div class="grid">
+		<div class="col-15 md:col-5">
+			<div class="card p-fluid" style="background-color:burlywood;">
+				<h3 style="text-align: center;color:blue;">Informations Personnelles :</h3>
+				<br>
+				<div class="field">
+    </div>
+    <div class="card p-fluid">
+       
+        <div class="field">
+			<label htmlFor="name1" ><h4>Nom :</h4></label>
+			<input pInputText id="name1" type="text" />
+			<br>
+			<br>
+            <label htmlFor="name1"><h4>Prénom :</h4></label>
+            <input pInputText id="name1" type="text" />
+        </div>
+        <h4>Sexe :</h4>
+			<div class="grid">
+				<div class="col-12 md:col-4">
+					<div class="field-radiobutton mb-0">
+						<p-radioButton name="city" value="Homme"  id="city1"></p-radioButton>
+						<label for="city1"><h5>Homme</h5></label>
+					</div>
+				</div>
+				<div class="col-12 md:col-4">
+					<div class="field-radiobutton">
+						<p-radioButton name="city" value="Femme"  id="city2"></p-radioButton>
+						<label for="city2"><h5>Femme</h5></label>
+					</div>
+			
+				</div>
+				
+			</div>
+        <h4>Date-Naissance :</h4>
+        <p-calendar [showIcon]="true" [showButtonBar]="true" ></p-calendar>
+        <div class="field col">
+            <label htmlFor="email2"><h4>Email :</h4></label>
+            <input pInputText id="email2" type="text" />
+        </div>
+        <div class="field col-12 md:col-6">
+            <label htmlFor="state"><h4>Nom-ville:</h4></label>
+            <p-dropdown [options]="VilleItems" optionLabel="name" ></p-dropdown>
+        </div>
+	</div>
+</div>
+</div>
+<!<div class="grid">
+	<div class="col-12 md:col-70">
+		<div class="card p-fluid" style="background-color:darkgray">
+			<h3 style="text-align: center;color:blue;">Informations Universitaires</h3>
+			<br>
+			<div class="field">
+        </div>
+		<div class="card p-fluid">
+       
+			<div class="field">
+	
+			<h4>Facultés :</h4>
+
+        <div class="field grid">
+            <p-dropdown [options]="FaculteItems" optionLabel="name" ></p-dropdown>  
+            <div class="col-10 md:col-8">
+                <input pInputText id="name3" type="text" />
+            </div>
+        </div>
+		<h4>Specialités :</h4>
+        <div class="field grid">
+            <p-dropdown [options]=" specialiteItems " optionLabel="name" ></p-dropdown>  
+            <div class="col-2 md:col-6">
+                <input pInputText id="name3" type="text" />
+            </div>
+        </div>
+        <h4>Technologies :</h4>
+			<div class="grid">
+				<div class="col-10 md:col-4">
+					<div class="field-checkbox mb-0">
+						<p-checkbox name="group1" value="Angular"  id="ch"></p-checkbox>
+						<label for="ch"><h5>Angular</h5></label>
+					</div>
+				</div>
+				<div class="col-12 md:col-4">
+					<div class="field-checkbox mb-0">
+						<p-checkbox name="group1" value="Laravel"  id="la"></p-checkbox>
+						<label for="la"><h5>Laravel</h5></label>
+					</div>
+				</div>
+				<div class="col-12 md:col-4">
+					<div class="field-checkbox mb-0">
+						<p-checkbox name="group1" value="Java"  id="ny"></p-checkbox>
+						<label for="ny"><h5>Java</h5></label>
+					</div>
+				</div>
+                <div class="col-12 md:col-4">
+					<div class="field-checkbox mb-0">
+						<p-checkbox name="group1" value="C++"  id="ny"></p-checkbox>
+						<label for="ny"><h5>C++</h5></label>
+					</div>
+				</div>
+                <div class="col-12 md:col-4">
+					<div class="field-checkbox mb-0">
+		            <p-checkbox name="group1" value="Python"  id="ny"></p-checkbox>
+						<label for="ny"><h5>Python</h5></label>
+						
+					</div>
+				</div>
+        
+			</div>
+		</div>
+	</div>
+	<div class="card p-fluid">
+		<div class="grid">
+			<div class="col-12 md:col-9">
+					<h3 style="text-align: center;color:blue;">Votre CV :</h3>
+					<br>
+					<br>
+					<div class="field">
+		</div>
+			<p-fileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*" maxFileSize="1000000" (onUpload)="onUpload($event)" chooseLabel="Browse"></p-fileUpload>	
+</div>
+		</div>
+		</div>
+		<br>
+		<br>
+		<br>
+			<span class="p-buttonset">
+				<button pButton pRipple label="Save" icon="pi pi-check" ></button>
+				<button pButton pRipple label="Cancel" icon="pi pi-times"></button>
+			</span>
+		</div>
+	</div>-->
+</div>
+
